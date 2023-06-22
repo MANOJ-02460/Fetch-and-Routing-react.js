@@ -1,0 +1,57 @@
+/* Write your CSS code here */
+.item-link {
+  text-decoration: none;
+  color: black;
+}
+.item-container {
+  border: 1px solid #d3d3d3;
+  padding: 12px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+.item-image {
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .item-container {
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+  }
+  .item-image {
+    width: 40%;
+  }
+  .item-info {
+    width: 60%;
+  }
+}
+.item-topic {
+  color: #2f4f4f90;
+  font-family: 'Roboto';
+  margin-bottom: 0;
+}
+
+.item-title {
+  color: #000000;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+.author-info {
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.author {
+  color: #2f4f4f90;
+  font-family: 'Roboto';
+}

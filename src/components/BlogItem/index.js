@@ -1,0 +1,25 @@
+// Write your JS code here
+import {Link} from 'react-router-dom'
+import './index.css'
+
+const BlogItem = props => {
+  const {blogData} = props
+  const {id, title, imageUrl, avatarUrl, author, topic} = blogData
+
+  return (
+    <Link to={`/blogs/${id}`} className="item-link">
+      <div className="item-container">
+        <img src={imageUrl} className="item-image" alt={`eachBlog${id}`} />
+        <div className="item-info">
+          <p className="item-topic">{topic}</p>
+          <h1 className="item-title">{title}</h1>
+          <div className="author-info">
+            <img src={avatarUrl} className="avatar" alt={`eachBlog${id}`} />
+            <p className="author">{author}</p>
+          </div>
+        </div>
+      </div>
+    </Link>
+  )
+}
+export default BlogItem
